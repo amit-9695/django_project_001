@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+        div{
+            box-shadow: 0 0 3px black;
+            border-radius: 5px;
+            padding: .5rem;
+            
+        }
+        h2{
+            color: rgb(81, 34, 34);
+            margin: 0;
+        }
+        main{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+        }
+
+        section{
+            height: 300px;
+            background-color: antiquewhite;
+            display: grid;
+            place-items: center;
+        }
+        article{
+            display: grid;
+            place-items: center;
+            gap: 1rem;
+        }
+        header{
+            background-color: rgb(161, 234, 210);
+            padding: .5rem;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        li{
+            padding: .5rem 1rem;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Lorem.</a></li>
+                <li><a href="#">A?</a></li>
+                <li><a href="#">Doloribus.</a></li>
+                <li><a href="#">At!</a></li>
+                <li><a href="#">Aut!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aperiam
+          expedita minima debitis animi atque sit dolorem dicta odit autem.
+          Natus dignissimos iste odit facilis doloremque earum. Laudantium, quis
+          facere!
+        </p>
+      </div>
+      <div>
+        <h2>Excepturi officiis veritatis voluptatum voluptatibus!</h2>
+        <p>
+          Nostrum eos magni repellat, perspiciatis recusandae sunt beatae
+          suscipit eum earum. Assumenda nemo vel laboriosam voluptas laudantium
+          magnam quae debitis error illo quisquam modi optio, quos dolore
+          voluptatum ex blanditiis.
+        </p>
+      </div>
+      <div>
+        <h2>Iste sapiente cupiditate quia neque.</h2>
+        <p>
+          Voluptatibus at id officiis dolore distinctio! Ipsa unde ipsam,
+          consectetur beatae quas ullam in dolore ratione amet blanditiis
+          inventore harum perferendis, minima voluptates sequi doloribus nihil
+          obcaecati qui ad quasi!
+        </p>
+      </div>
+      <div>
+        <h2>Dicta possimus fugiat perspiciatis neque.</h2>
+        <p>
+          Beatae fugit tempore quibusdam neque harum alias recusandae adipisci,
+          nobis et ad soluta quidem totam eaque ullam dignissimos expedita
+          quisquam, tempora quam minus! Eaque voluptatum iure non nesciunt earum
+          cum?
+        </p>
+      </div>
+      <div>
+        <h2>Totam suscipit a aspernatur exercitationem.</h2>
+        <p>
+          Consectetur soluta fugit a nulla optio, quod quasi beatae at
+          voluptatum, ab, nisi neque architecto rerum obcaecati explicabo
+          eveniet. Voluptas perspiciatis deleniti quod facilis necessitatibus.
+          Ipsum cumque vero ut sit!
+        </p>
+      </div>
+      <div>
+        <h2>Voluptate eum tempore delectus at!</h2>
+        <p>
+          Soluta expedita officiis laboriosam ratione laborum, aut eos
+          cupiditate optio, voluptas voluptatem nihil aspernatur explicabo quos
+          non earum fugit quidem sit unde quisquam. Earum minus, blanditiis
+          reiciendis temporibus itaque delectus.
+        </p>
+      </div>
+    </main>
+    <section>
+        <article>
+            <h2>Start the Learning HTML</h2>
+            <button>Know More</button>
+        </article>
+    </section>
+  </body>
+</html>
