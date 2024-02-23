@@ -36,20 +36,29 @@
       }
       #b1{
         background-color: red;
-        transition: all 300ms linear;
+        transition: all 300ms ease-in-out;
       }
       #b1:hover{
         background-color: green;
         border-radius: 100%;
+        color: white;
       }
       
+      #b3{
+        background-color: rgb(232, 174, 67);
+        transition: all 1000ms ease-in-out;
+      }
+      #b2:hover ~ #b3{
+        background-color: rgb(90, 90, 236);
+        transform: scale(1.2) rotate(360deg) translateY(-50px) ;
+      }
     </style>
   </head>
   <body>
     <section class="container">
       <div class="boxes" id="b1">Lorem.</div>
-      <div class="boxes">Asperiores?</div>
-      <div class="boxes">Fugiat!</div>
+      <div class="boxes" id="b2">Asperiores?</div>
+      <div class="boxes" id="b3">Fugiat!</div>
       <div class="boxes">Sit?</div>
       <div class="boxes">Minus?</div>
       <div class="boxes">Quasi.</div>
