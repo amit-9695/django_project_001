@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <style>
       * {
         margin: 0;
@@ -34,23 +38,45 @@
         box-shadow: 0 0 10px rgb(42, 37, 37);
         transition: all 0.3s ease;
       }
-      #b1{
+      #b1 {
         background-color: red;
         transition: all 300ms ease-in-out;
       }
-      #b1:hover{
+      #b1:hover {
         background-color: green;
         border-radius: 100%;
         color: white;
       }
-      
-      #b3{
+
+      #b3 {
         background-color: rgb(232, 174, 67);
         transition: all 1000ms ease-in-out;
       }
-      #b2:hover ~ #b3{
+      #b2:hover ~ #b3 {
         background-color: rgb(90, 90, 236);
-        transform: scale(1.2) rotate(360deg) translateY(-50px) ;
+        transform: scale(1.2) rotate(360deg) translateY(-50px);
+      }
+
+      /* to and fro animation */
+      @keyframes toandfro {
+        0% {
+          transform: translateY(0);
+          background-color: brown;
+        }
+        50% {
+          transform: translateY(-100px);
+          background-color: blueviolet;
+        }
+        100% {
+          transform: translateY(100px);
+          background-color: rgb(167, 43, 136);
+        }
+      }
+
+      .boxes:nth-child(6),
+      .boxes:nth-child(8),
+      .boxes:last-child {
+        animation: toandfro 500ms infinite ease-in-out alternate;
       }
     </style>
   </head>
@@ -60,7 +86,7 @@
       <div class="boxes" id="b2">Asperiores?</div>
       <div class="boxes" id="b3">Fugiat!</div>
       <div class="boxes">Sit?</div>
-      <div class="boxes">Minus?</div>
+      <div class="boxes animate__animated animate__bounce animate_infinite">Minus?</div>
       <div class="boxes">Quasi.</div>
       <div class="boxes">Ipsa.</div>
       <div class="boxes">Incidunt!</div>
