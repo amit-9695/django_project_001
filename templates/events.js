@@ -37,7 +37,7 @@ function input_events(){
             input.style.backgroundColor='#ff8442'
         })
         input.addEventListener('blur', () =>{
-            input.style.backgroundColor='#white'
+            input.style.backgroundColor='white'
             b4.innerHTML=input.value
         })
     })
